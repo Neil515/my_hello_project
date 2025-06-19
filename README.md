@@ -7,40 +7,36 @@
 
 ## 🧭 教學流程（已完成）
 
-- ✅ 第 1 步：建立 GitHub 專案（雲端）
-- ✅ 第 2 步：Clone 專案到本機（C:\GitHubProjects\my_hello_project）
-- ✅ 第 3 步：新增 `ai_progress.md` 與 `hello.txt`
-- ✅ 第 4 步：Commit + Push 回 GitHub
-- ✅ 第 5 步：建立每日可接續進度的機制
+### ✅ 第 1 步：建立 GitHub 專案（雲端）
+1. 登入 GitHub 並點選右上角 `＋` → `New repository`
+2. 輸入 Repository 名稱：`my_hello_project`
+3. 勾選：
+   - `Add a README file`
+   - `.gitignore` 選 None
+4. 點選 `Create repository`
 
----
+### ✅ 第 2 步：Clone 專案到本機
+1. 開啟 GitHub Desktop → File → Clone repository
+2. 選擇 `GitHub.com` 分頁 → 找到 `my_hello_project`
+3. 選擇資料夾路徑：`C:\GitHubProjects\my_hello_project`（避免放在 OneDrive）
 
-## 📦 專案檔案說明
+### ✅ 第 3 步：新增內容檔案
+1. 在本機資料夾中手動新增兩個檔案：
+   - `ai_progress.md`：記錄進度與預計下一步
+   - `hello.txt`：簡單放一行文字：`Hello, AI! This is my first project.`
+2. 開啟 GitHub Desktop → 勾選變更的兩個檔案
+3. 填入 Commit 訊息：`新增 ai_progress.md 與 hello.txt 初始內容`
 
-| 檔案名稱 | 說明 |
-|----------|------|
-| `ai_progress.md` | AI 助手專用進度紀錄檔，記錄每天完成事項與下一步計畫 |
-| `hello.txt` | 模擬主體內容的測試檔案，初始寫入 Hello, AI! |
-| `README.md` | 專案首頁說明手冊 |
-| `error_log.md` | （可選）記錄開發過程中遇到的錯誤與解法 |
+### ✅ 第 4 步：Commit + Push 回 GitHub
+1. 點選 `Commit to main`
+2. 然後點擊 `Push origin`
+3. 確認 GitHub 網站已顯示這些更新
 
----
-
-## 🎯 專案目的
-
-1. 建立一套適合個人或團隊的 Git + AI 接軌開發流程
-2. 練習 Markdown 語法與日誌管理
-3. 可延伸應用到真實專案、Python 自動化、日誌分析等
-
----
-
-## 🚀 未來延伸學習方向
-
-- 建立 `scripts/` 資料夾，撰寫日誌生成器
-- 使用 Python 整合 `hello.txt` → 自動產生日誌
-- 練習 branch、merge、conflict 解決
-- 將 ai_progress 自動摘要並產生報告
-
----
-
-© 2025 Neil515 | 練習專案用途，請勿公開轉載
+### ✅ 第 5 步：建立每日可接續進度的機制
+1. 每天結束工作時，更新 `ai_progress.md` 三個區塊：
+   - 最後更新日期
+   - 今日完成項目
+   - 下一步預計任務
+2. 更新 `daily_checklist.md` 與（進階）`next_task_prompt.md`
+3. 最後再次 Commit + Push，同步進度到 GitHub
+4. 隔天開啟 AI 工具時，只需貼上：
